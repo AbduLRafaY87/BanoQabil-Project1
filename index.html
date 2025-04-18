@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdul Rafay - Creative Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <style>
+
+        main {
+            display: flex;
+            max-width: 1200px;
+            margin: 80px auto 100px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        
+        .left-panel {
+            border-radius: 10px;
+            width: 30%;
+            background-color: #eaeaea;
+            color: #303030;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .left-panel img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .left-panel h2 {
+            margin: 10px 0;
+        }
+
+        .left-panel p {
+            font-size: 0.9rem;
+        }
+
+        .left-panel .info {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .info i {
+            margin-right: 10px;
+            color: #f39c12;
+        }
+
+        .right-panel {
+            width: 70%;
+            padding: 30px 40px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .section p,
+        .section li {
+            line-height: 1.6;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .section ul li::before {
+            content: "✔️ ";
+            margin-right: 8px;
+            color: #f39c12;
+        }
+        @media screen and (max-width: 1100px) {
+            main {
+                text-align: center;
+                flex-direction: column;
+                width: 90%;
+            }
+
+            .left-panel .info{
+                text-align: center !important;
+            }
+            .left-panel {
+                width: 100%;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .right-panel {
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>ABDUL RAFAY</h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a  href="form.html">Form</a></li>
+                    <li><a href="chess.html">Chess</a></li>
+                    <li><a href="periodictable.html">Periodic Table</a></li>
+                    <!-- <li> 
+                        <button id="toggleButton">Toggle CSS</button>
+                        <i id="toggleButton" class="fa-solid fa-toggle-on"></i>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Resume Body -->
+    <main>
+        <div class="left-panel">
+            <img src="my DP.png" alt="Profile Picture">
+            <h2>Abdul Rafay</h2>
+            <p>Digital Marketer | MERN Stack Developer</p>
+            <div class="info">
+                <p><i class="fa-solid fa-envelope"></i> ars.chatriwala@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +92-XXX-XXXXXXX</p>
+                <p><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</p>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="section">
+                <h2>Professional Summary</h2>
+                <p>Co-founder of Prime Creators. Helping brands grow online through SEO, Web Development, and AI-driven strategies. Passionate educator and a MERN stack developer building scalable, smart web solutions.</p>
+            </div>
+
+            <div class="section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>Web Development (HTML, CSS, JS)</li>
+                    <li>MERN Stack (MongoDB, Express, React, Node.js)</li>
+                    <li>Problem Solving</li>
+                    <li>Automation</li>
+                    <li>Mentoring & Tech Training</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Experience</h2>
+                <p><strong>Co-Founder – Prime Creators</strong> (2025–Present)<br>Built and led a team focused on client-focused SEO and web design solutions, helping businesses boost traffic and conversions.</p>
+                <p><strong>Web Developer - Trainer</strong> (2024–2025)<br>Mentored dozens of students to create modern responsive websites and build confidence in real-world projects.</p>
+                <p><strong>Web Designer - Intern</strong>(2023)<br>Designed and served the best results for the company.</p>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <p><strong>Intermediate</strong><br>Aga Khan Higher Secondary | 2024 – 2026</p>
+                <p><strong>Matriculation</strong><br>MBCS School | 2013 – 2024</p>
+            </div>
+
+            <div class="section">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Apna College - Web Dev</li>
+                    <li>Best Student Ambassador</li>
+                    <li>LinkedIn Learning – Advanced SEO</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="socialIcons">Follow me on: <a target="_blank"
+                href="https://www.instagram.com/rafay.guides?igsh=N3h6ZG5zeTkxdmp3"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/abdul-rafay-sajjad/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/AbduLRafaY87"><i class="fa-brands fa-github"></i></a>
+        </p>
+        <p>© Copyright 2025 All rights reserved | Abdul Rafay</p>
+    </footer>
+
+</body>
+
+</html>
+

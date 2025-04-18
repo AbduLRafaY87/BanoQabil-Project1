@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHESS - Final HTML Project</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <div class="msg">
+        <p>Want to see how it looks without CSS(Cascading Style Sheet)? Try clicking toggle button
+        </p>
+        <i id="toggleButton" class="fa-solid fa-toggle-on"></i>
+
+    </div> -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>ABDUL RAFAY</h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="form.html">Form</a></li>
+                    <li><a class="active" href="chess.html">Chess</a></li>
+                    <li><a href="periodictable.html">Periodic Table</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<hr>
+    <main>
+        <div class="chessBoard">
+            <h1>CHESS BOARD</h1>
+            <br>
+            <table >
+                <tr>
+                    <td></td>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td bgcolor="white" class="white"><p>♖</p></td>
+                    <td bgcolor="black" class="black"><p>♘</p></td>
+                    <td bgcolor="white" class="white"><p>♝</p></td>
+                    <td bgcolor="black" class="black"><p>♛</p></td>
+                    <td bgcolor="white" class="white"><p>♚</p></td>
+                    <td bgcolor="black" class="black"><p>♝</p></td>
+                    <td bgcolor="white" class="white"><p>♘</p></td>
+                    <td bgcolor="black" class="black"><p>♖</p></td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td bgcolor="black" class="black"><p>♙</p></td>
+                    <td bgcolor="white" class="white"><p>♙</p></td>
+                    <td bgcolor="black" class="black"><p>♙</p></td>
+                    <td bgcolor="white" class="white"><p>♙</p></td>
+                    <td bgcolor="black" class="black"><p>♙</p></td>
+                    <td bgcolor="white" class="white"><p>♙</p></td>
+                    <td bgcolor="black" class="black"><p>♙</p></td>
+                    <td bgcolor="white" class="white"><p>♙</p></td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td bgcolor="white" class="white"></td>
+                    <td bgcolor="black" class="black"></td>
+                    <td bgcolor="white" class="white"></td>
+                    <td bgcolor="black" class="black"></td>
+                    <td bgcolor="white" class="white"></td>
+                    <td bgcolor="black" class="black"></td>
+                    <td bgcolor="white" class="white"></td>
+                    <td bgcolor="black" class="black"></td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td bgcolor="black" class="black"></td>
+                    <td bgcolor="white" class="white"></td>
+                    <td bgcolor="black" class="black"></td>
+                    <td bgcolor="white" class="white"></td>
+                    <td bgcolor="black" class="black"></td>
+                    <td bgcolor="white" class="white"></td>
+                    <td bgcolor="black" class="black"></td>
+                    <td bgcolor="white" class="white"></td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td bgcolor="white" class="white"></td>
+                    <td bgcolor="black" class="black"></td>
+                    <td bgcolor="white" class="white"></td>
+                    <td bgcolor="black" class="black"></td>
+                    <td bgcolor="white" class="white"></td>
+                    <td bgcolor="black" class="black"></td>
+                    <td bgcolor="white" class="white"></td>
+                    <td bgcolor="black" class="black"></td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td bgcolor="black" class="black"></td>
+                    <td bgcolor="white" class="white"></td>
+                    <td bgcolor="black" class="black"></td>
+                    <td bgcolor="white" class="white"></td>
+                    <td bgcolor="black" class="black"></td>
+                    <td bgcolor="white" class="white"></td>
+                    <td bgcolor="black" class="black"></td>
+                    <td bgcolor="white" class="white"></td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td bgcolor="white" class="white"><p>♙</p></td>
+                    <td bgcolor="black" class="black"><p>♙</p></td>
+                    <td bgcolor="white" class="white"><p>♙</p></td>
+                    <td bgcolor="black" class="black"><p>♙</p></td>
+                    <td bgcolor="white" class="white"><p>♙</p></td>
+                    <td bgcolor="black" class="black"><p>♙</p></td>
+                    <td bgcolor="white" class="white"><p>♙</p></td>
+                    <td bgcolor="black" class="black"><p>♙</p></td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td bgcolor="black" class="black"><p>♖</p></td>
+                    <td bgcolor="white" class="white"><p>♘</p></td>
+                    <td bgcolor="black" class="black"><p>♝</p></td>
+                    <td bgcolor="white" class="white"><p>♛</p></td>
+                    <td bgcolor="black" class="black"><p>♚</p></td>
+                    <td bgcolor="white" class="white"><p>♝</p></td>
+                    <td bgcolor="black" class="black"><p>♘</p></td>
+                    <td bgcolor="white" class="white"><p>♖</p></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                </tr>
+            </table>
+        </div>
+        <div class="instructions">
+            <h2><u>How to Play Chess (Guide):</u></h2>
+            <br>
+            <ol>
+                <li><strong>The Chessboard</strong>
+                    <ul>
+                        <li>The board consists of 64 squares, arranged in an 8x8 grid.</li>
+                        <li>The squares alternate between light and dark colors, with each player's pieces placed on the first two rows (ranks) at the start of the game.</li>
+                    </ul>
+                </li>
+        
+                <li><strong>The Pieces and Their Movements</strong>
+                    <ul>
+                        <li><strong>1 King:</strong> The most important piece. The game ends when the king is checkmated (i.e., it is under threat of capture and cannot escape).
+                            <ul>
+                                <li>Movement: Moves one square in any direction.</li>
+                            </ul>
+                        </li>
+                        <li><strong>1 Queen:</strong> The most powerful piece.
+                            <ul>
+                                <li>Movement: Moves any number of squares horizontally, vertically, or diagonally.</li>
+                            </ul>
+                        </li>
+                        <li><strong>2 Rooks:</strong> Each rook is placed in the corners.
+                            <ul>
+                                <li>Movement: Moves any number of squares horizontally or vertically.</li>
+                            </ul>
+                        </li>
+                        <li><strong>2 Knights:</strong> The knights are placed next to the rooks.
+                            <ul>
+                                <li>Movement: Moves in an "L" shape: two squares in one direction and then one square perpendicular. Knights can jump over other pieces.</li>
+                            </ul>
+                        </li>
+                        <li><strong>2 Bishops:</strong> Placed next to the knights.
+                            <ul>
+                                <li>Movement: Moves diagonally any number of squares.</li>
+                            </ul>
+                        </li>
+                        <li><strong>8 Pawns:</strong> The pawns are placed in the second row.
+                            <ul>
+                                <li>Movement: Moves forward one square. On the first move, they can move forward two squares. Pawns capture diagonally.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+        
+                <li><strong>The Objectives</strong>
+                    <ul>
+                        <li><strong>Check:</strong> When the king is under direct threat of capture.</li>
+                        <li><strong>Checkmate:</strong> When the opponent's king is in check, and there is no way to move the king to a safe square. This ends the game.</li>
+                        <li><strong>Stalemate:</strong> A draw where no player can make a legal move, and the king is not in check.</li>
+                    </ul>
+                </li>
+        
+                <li><strong>Basic Rules</strong>
+                    <ul>
+                        <li><strong>Turn-Based Play:</strong> Players take turns moving one piece at a time.</li>
+                        <li><strong>Special Moves:</strong>
+                            <ul>
+                                <li><strong>Castling:</strong> A special move involving the king and one of the rooks. It’s done to protect the king and activate the rook. Neither piece can have moved previously, and there must be no pieces between them.</li>
+                                <li><strong>En Passant:</strong> A special pawn capture that occurs when a pawn moves two squares forward from its starting position and lands beside an opponent’s pawn.</li>
+                                <li><strong>Pawn Promotion:</strong> When a pawn reaches the opponent's back rank (8th for white, 1st for black), it can be promoted to a queen, rook, bishop, or knight.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+        
+                <li><strong>How the Game Starts</strong>
+                    <ul>
+                        <li>Place the board so that each player has a white square in the bottom-right corner.</li>
+                        <li>The back row for each player (the 1st and 8th rows) are set up with:
+                            <ul>
+                                <li>Rook, Knight, Bishop, Queen, King, Bishop, Knight, Rook (left to right).</li>
+                            </ul>
+                        </li>
+                        <li>The pawns are placed on the second and seventh rows.</li>
+                    </ul>
+                </li>
+        
+                <li><strong>Common Strategies for Beginners</strong>
+                    <ul>
+                        <li><strong>Control the Center:</strong> Early in the game, try to control the central squares (d4, d5, e4, e5) to allow your pieces to move freely.</li>
+                        <li><strong>Develop Your Pieces:</strong> Move your knights and bishops out from their starting positions to prepare for the middle game.</li>
+                        <li><strong>Don’t Move the Same Piece Twice:</strong> In the opening, try to move each piece only once to improve your position.</li>
+                        <li><strong>Protect Your King:</strong> Always keep your king safe, especially by castling early in the game.</li>
+                        <li><strong>Plan Ahead:</strong> Always think about your next few moves and try to predict your opponent’s moves.</li>
+                    </ul>
+                </li>
+        
+                <li><strong>Winning the Game</strong>
+                    <ul>
+                        <li><strong>Checkmate:</strong> If your opponent's king is in check and there are no moves to escape, you win the game.</li>
+                        <li><strong>Resignation:</strong> If a player believes they cannot win, they can resign, giving victory to the opponent.</li>
+                        <li><strong>Draw:</strong> There are several ways the game can end in a draw, including stalemate, threefold repetition, or insufficient material to checkmate.</li>
+                    </ul>
+                </li>
+        
+                <li><strong>Chess Notation</strong>
+                    <ul>
+                        <li><strong>e4:</strong> Move the pawn in front of the king two squares forward.</li>
+                        <li><strong>Nf3:</strong> Move the knight to the f3 square.</li>
+                        <li><strong>Qxf7#:</strong> The queen moves to f7 and delivers checkmate.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        
+    </main>
+<hr>
+    <footer>
+        <p class="socialIcons">Follow me on: <a target="_blank"
+                href="https://www.instagram.com/rafay.guides?igsh=N3h6ZG5zeTkxdmp3"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/abdul-rafay-sajjad/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/AbduLRafaY87"><i class="fa-brands fa-github"></i></a>
+        </p>
+        <p>© Copyright 2025 All rights reserved | Abdul Rafay</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

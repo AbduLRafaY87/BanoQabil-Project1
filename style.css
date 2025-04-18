@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.13s ease;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eaeaea;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+hr {
+    display: none;
+}
+
+.active {
+    color: #007bff !important;
+}
+
+.unset-style * {
+    all: unset;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .socialIcons a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer .socialIcons a:hover {
+    color: #007bff;
+}
+
+footer .socialIcons {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.msg {
+    text-align: center;
+    background-color: #cfe2ff;
+    font-size: .9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.msg i {
+    font-size: 1.5em;
+}
+
+.navbar {
+    background-color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar .logo h1 {
+    position: relative;
+    display: inline-block;
+    font-size: 1.8rem;
+}
+
+.navbar .logo h1::after {
+    content: "</>";
+    font-size: .5em;
+    display: inline-block;
+}
+
+.navbar ul li a:hover {
+    color: #007bff;
+}
+
+main {
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.herosection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.herosection .left {
+    width: 100%;
+    max-width: 600px;
+}
+
+.herosection .right {
+    width: 100%;
+    max-width: 300px;
+}
+
+.herosection .right img {
+    width: 100%;
+    border-radius: 100%;
+    border: 2px solid white;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.breadcrumb {
+    background-color: thistle;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: .8em;
+    border-radius: 50px;
+    width: fit-content;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.herosection h1 {
+    font-size: 2.5em;
+}
+
+.herosection p {
+    font-size: 1em;
+    color: #333;
+    margin: auto 0px;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+fieldset legend {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #333;
+    margin: 0px 10px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: top;
+    gap: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
+form input[type="radio"] {
+    width: 15px;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    resize: none;
+    border: 1px solid #333;
+}
+
+.twoFeilds {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.twoFeilds > * {
+    flex: 1 1 200px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* CHESS BOARD */
+.chessBoard, .periodicTable {
+    text-align: center;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.chessBoard table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+    min-width: 300px;
+}
+
+.chessBoard table td {
+    padding: 10px;
+    position: relative;
+}
+
+.white, .black {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.chessBoard td p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.instructions p {
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.instructions ol li {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.instructions ol li ul {
+    margin-left: 20px;
+}
+
+/* PERIODIC TABLE */
+.periodicTable {
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.periodicTable table {
+    margin: 0 auto;
+    border: none !important;
+    min-width: 800px;
+}
+
+.periodicTable table td {
+    padding: 1px;
+    border: none !important;
+    overflow: hidden;
+    font-size: 1.1em;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.gap {
+    width: 8px !important;
+}
+
+.periodicTable table td .info h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+}
+
+.periodicTable table td .info p {
+    font-size: .5em;
+    align-items: center;
+}
+
+.periodicTable table td .info {
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+    padding: 1px 5px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.periodicTable table td:has(.info):hover {
+    transform: scale(1.3);
+    transition: all .3s ease;
+    cursor: pointer;
+    z-index: 1;
+    border: 1px solid #1a1a1a;
+}
+
+.periodicTable table td:hover .info {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 1);
+}
+
+.alkaliMetal {
+    /* background-color: #00758c50; */
+}
+
+.alkalineEarthMetal {
+    background-color: #d60024;
+}
+
+.transitionMetal {
+    background-color: #6232ec;
+}
+
+.postTransitionMetal {
+    background-color: #227754;
+}
+
+.metalloid {
+    background-color: #945700;
+}
+
+.reactiveNonMetal {
+    background-color: #0060f0;
+}
+
+.nobleGas {
+    background-color: #cd1d5e;
+}
+
+.lanthanide {
+    background-color: #003355;
+}
+
+.actinide {
+    background-color: #c73200;
+}
+
+.unknown {
+    background-color: #3f374f;
+}
+
+/* Media queries for responsive design */
+@media screen and (min-width: 768px) {
+    .navbar {
+        padding: 20px 50px;
+    }
+    
+    main {
+        padding: 30px 50px;
+        margin-top: 50px;
+    }
+    
+    .forms {
+        flex-direction: row;
+    }
+    
+    .white, .black {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .periodicTable table td {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .herosection h1 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .navbar ul {
+        justify-content: center;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .herosection {
+        flex-direction: column-reverse;
+    }
+    
+    .herosection .right {
+        max-width: 200px;
+    }
+    
+    .twoFeilds {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .herosection h1 {
+        font-size: 2em;
+    }
+    
+    .white, .black {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5em;
+    }
+    
+    footer {
+        padding: 15px 10px;
+    }
+    
+    fieldset legend {
+        font-size: 1.1em;
+    }
+}

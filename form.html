@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM - Final HTML Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="content">
+    <!-- <div class="msg">
+        <p>Want to see how it looks without CSS(Cascading Style Sheet)? Try clicking toggle button
+        </p>
+        <i id="toggleButton" class="fa-solid fa-toggle-on"></i>
+
+    </div> -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>ABDUL RAFAY</h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="form.html">Form</a></li>
+                    <li><a href="chess.html">Chess</a></li>
+                    <li><a href="periodictable.html">Periodic Table</a></li>
+                    <!-- <li> 
+                        <button id="toggleButton">Toggle CSS</button>
+                        <i id="toggleButton" class="fa-solid fa-toggle-on"></i>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+<hr>
+    <main>
+
+        <div class="forms">
+            <form action="#">
+                <div class="personalDetails">
+                    <fieldset>
+                        <legend>&nbsp;<b>PERSONAL</b> DETAILS&nbsp;</legend>
+                        <div class="form-item">
+                            <label for="name">First Name:</label>
+                            <input type="text" id="firstname" name="firstname" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="name">Last Name:</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="name">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="twoFeilds">
+                            <div class="form-item">
+                                <label for="dob">Date of Birth:</label>
+                                <input type="date" id="dob" name="dob" required>
+                            </div>
+                            <div class="form-item">
+                                <label for="age">Age:</label>
+                                <input type="number" id="age" name="age" required>
+                            </div>
+                        </div>
+                        <div class="twoFeilds">
+                            <div class="form-item">
+                                <label for="gender">Gender:</label>
+                                <br>
+                                <input type="radio" name="gender" id="male" value="male" required> Male
+                                <input type="radio" name="gender" id="female" value="female" required> Female
+                            </div>
+                            <div class="form-item">
+                                <label for="martial">Martial Status:</label>
+                                <br>
+                                <input type="radio" name="martial" id="married" value="married" required> Married
+                                <input type="radio" name="martial" id="unmarried" value="Unmarried" required> Unmarried
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="address">Address:</label>
+                            <textarea id="address" name="address" rows="5" cols="5" placeholder="Enter address here..."
+                                required></textarea>
+                        </div>
+                        <input type="submit" value="Submit" class="submit">
+
+                    </fieldset>
+                </div>
+            </form>
+            <hr>
+            <form action="#">
+                <div class="jobDetails">
+                    <fieldset>
+                        <legend>&nbsp;<b>JOB</b> INFORMATION&nbsp;</legend>
+                        <div class="twoFeilds">
+                            <div class="form-item">
+                                <label for="title">Title:</label>
+                                <input type="text" id="title" name="title" required>
+                            </div>
+                            <div class="form-item">
+                                <label for="empId">Employee ID:</label>
+                                <input type="number" id="empId" name="empId" required>
+                            </div>
+                        </div>
+                        <div class="twoFeilds">
+                            <div class="form-item">
+                                <label for="workPhone">Work Phone:</label>
+                                <input type="tel" id="workPhone" name="workPhone" required>
+                            </div>
+                            <div class="form-item">
+                                <label for="jobEmail">Work Email:</label>
+                                <input type="email" id="jobEmail" name="jobEmail" required>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label for="department">Department:</label>
+                            <select name="department" id="department" required>
+                                <option hidden>Select suitable department</option>
+                                <option value="IT">IT Department</option>
+                                <option value="HR">HR Department</option>
+                                <option value="Finance">Finance Department</option>
+                                <option value="Marketing">Marketing Department</option>
+                                <option value="Sales">Sales Department</option>
+                                <option value="Sales">Customer Service Department</option>
+                            </select>
+                        </div>
+                        <div class="twoFeilds">
+                            <div class="form-item">
+                                <label for="startDate">Start Date:</label>
+                                <input type="date" id="startDate name=" startDate" required>
+                            </div>
+                            <div class="form-item">
+                                <label for="jobEmail">Email:</label>
+                                <input type="email" id="jobEmail name="jobEmail" required>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label for="workAddress">Work Location:</label>
+                            <textarea id="workAddress" name="workAddress" rows="5" cols="5" placeholder="Enter location here..."
+                                required></textarea>
+                        </div>
+                        <input type="submit" value="Submit" class="submit">
+                    </fieldset>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+<hr>
+    <footer>
+        <p class="socialIcons">Follow me on: <a target="_blank"
+                href="https://www.instagram.com/rafay.guides?igsh=N3h6ZG5zeTkxdmp3"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/abdul-rafay-sajjad/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/AbduLRafaY87"><i class="fa-brands fa-github"></i></a>
+        </p>
+        <p>© Copyright 2025 All rights reserved | Abdul Rafay</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
